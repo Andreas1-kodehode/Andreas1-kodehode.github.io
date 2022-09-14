@@ -1,0 +1,61 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "SF Pro Text";
+
+}
+
+:root {
+    --blue: #65AFFF;
+    --white: #F4F4ED;
+    --black: #30323D;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.container {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: auto;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.row {
+    display: flex;
+
+}
+
+h1, h3, p, input {
+    color: var(--white);
+}
+
+
+
+input {
+    color: black;
+    border: none;
+    margin: 8px auto;
+    padding: 12px 20px;
+}
+
+input[type=submit] {
+    font-size: 1.4rem;
+    background-color: white;
+    color: black;
+}
+
+input[type=submit]:hover {
+    background-color: var(--black);
+    color: white;
+}
